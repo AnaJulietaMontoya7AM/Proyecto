@@ -321,20 +321,18 @@ void CGame::MenuActualizar()
 void CGame::MenuPintar()
 {
 	menuFondo->Draw();
-	textoTitulo->TranslateXYDraw(WIDTH_SCREEN / 8, 0);
+	textoTitulo->TranslateXYDraw(163, 2);
 
-	textoNombre->TranslateXY( WIDTH_SCREEN / 3, 450);//570
-	textoNombre->ScaleXYZ(20.0f,20.0f,20.0f);
-	textoNombre->RotateXYZ(.1f,.1f,.1f);
+	textoNombre->TranslateXY( 130, 600);//570
 	textoNombre->Draw();
 
-	textoOpcion1->TranslateXYDraw(320, 220);
-	textoOpcion2->TranslateXYDraw(320, 220 + 30);
+	textoOpcion1->TranslateXYDraw(268, 244);
+	textoOpcion2->TranslateXYDraw(283, 319);
 
 	if (opcionSeleccionada == MENU_OPCION1)
-		textoOpcion1Sel->TranslateXYDraw(320, 220);
+		textoOpcion1Sel->TranslateXYDraw(190, 244);
 	else
-		textoOpcion2Sel->TranslateXYDraw(320, 220 + 30);
+		textoOpcion2Sel->TranslateXYDraw(190, 319);
 
 }//void	
 
