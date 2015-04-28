@@ -35,7 +35,7 @@ void Nave::crearNuevo(int pos)
 	if (tipoNave == NAVE_PROPIA)
 		nave->TranslateXY(pos, HEIGHT_SCREEN - 64);
 	if (tipoNave == NAVE_ENEMIGA)
-		nave->TranslateXY(pos, 0);
+		nave->TranslateXY(pos, 30);
 }
 
 void Nave::Disparar(int balas)
@@ -63,6 +63,7 @@ void Nave::Disparar(int balas)
 void Nave::Draw()
 {
 	if (visible){
+		nave->ScaleXYZ(10.f,10.f,10.f);
 		nave->Draw();
 		for (int i = 0; i < MAXIMO_DE_BALAS; i++)
 		{

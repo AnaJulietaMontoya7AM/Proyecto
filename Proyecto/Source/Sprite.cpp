@@ -150,6 +150,8 @@ void Sprite::CreateTextures(char* name){
 		rotate_y++;
 		rotate_z++;
 	}
+
+
 	void Sprite::ScaleXYZ(GLfloat x, GLfloat y, GLfloat z){
 		scale_x = x;
 		scale_y = y;

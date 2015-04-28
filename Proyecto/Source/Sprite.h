@@ -44,7 +44,7 @@ public:
 	void TranslateXYDraw(GLfloat x, GLfloat y);
 	void RotateXYZ(GLfloat x, GLfloat y, GLfloat z);
 	void ScaleXYZ(GLfloat x, GLfloat y, GLfloat z);
-
+	
 	GLfloat rotate_x;
 	GLfloat rotate_y;
 	GLfloat rotate_z;
@@ -54,6 +54,9 @@ public:
 	GLfloat scale_x;
 	GLfloat scale_y;
 	GLfloat scale_z;
+
+	
+	
 
 	GLuint numero_vertices;
 

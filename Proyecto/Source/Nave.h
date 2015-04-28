@@ -12,6 +12,7 @@ class Nave
 	bool visible;
 	bool colision;
 	int tipoNave;
+	
 public:
 	enum TipoColision{
 		NAVE,
